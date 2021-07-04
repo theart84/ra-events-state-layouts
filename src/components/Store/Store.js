@@ -5,8 +5,8 @@ import fakeData from "../../fakeData/fakeData";
 import classes from './Store.module.css';
 import IconSwitch from "../IconSwitch/IconSwitch";
 
-const Store = (props) => {
-  const [products, setProducts] = useState(fakeData);
+const Store = () => {
+  const products = fakeData;
   const [isListView, setIsListView] = useState(false);
 
   const onSwitchListHandler = () => {
